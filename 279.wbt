@@ -1,0 +1,112 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.05474655832804007 -0.0043623807652880126 -0.9984907530795131 3.3003323740143755
+  position 4.949605153808324 -0.5951995131848505 1.1959559480160522
+}
+TexturedBackground {
+}
+RectangleArena {
+  floorSize 4 4
+  floorTileSize 0 0
+  wallHeight 0
+}
+DEF BOX Transform {
+  translation 0 0.16 0.16
+  rotation 0 1 0 4.6928e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.823529 0.972549 1
+        roughness 0.4
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+  ]
+}
+DEF CYLINDER Transform {
+  translation 0.02 -0.23 -9.38498e-08
+  rotation 0 1 0 4.692820414042842e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.333333 0.666667 0
+      }
+      geometry Cylinder {
+        height 0.5
+        radius 0.07
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation -0.27 -0.08 0.28
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Cone {
+        bottomRadius 0.14
+        height 0.5
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+DEF CAPSULE Transform {
+  translation 0.58 0 0.36
+  children [
+    DEF CAPSULE Shape {
+      appearance PBRAppearance {
+      }
+      geometry Capsule {
+        height 0.6
+        radius 0.09
+      }
+    }
+  ]
+}
+DEF SPHERE Transform {
+  translation 0 0.62 0.21
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+}
+DEF PLANE Transform {
+  translation 0 -1.11 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.333333 1
+      }
+      geometry Plane {
+      }
+    }
+  ]
+}
+DEF MESH Transform {
+  translation 0.09 0 0.44
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.760784 0.470588
+      }
+      geometry Mesh {
+      }
+    }
+  ]
+}
